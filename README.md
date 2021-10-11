@@ -18,7 +18,7 @@ Table of content:
 - clock: print out the current time second by second. 
 
 
-# Lab0
+# Lab2
 1. [basiclibrary](./basiclibrary/lib/src/main/java/basiclibrary/Library.java) * I spent 3 hours to complete this assignment
 
 - Created basiclibrary directory 
