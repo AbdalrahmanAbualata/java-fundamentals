@@ -3,7 +3,9 @@
 Table of content:
 
 # Lab01
-1. [basics](./basics/Main.java) * I spent 2 hours to complete this assignment
+
+1. [basics](./basics) * I spent 2 hours to complete this assignment
+
 
 - Created basics directory 
 - It contains Main Java file.
@@ -14,7 +16,6 @@ Table of content:
 - pluralize: accepts a word and a number and returns a string with  an “s”.
 - flipNHeads: accepts an integer n and flips coins until n heads are flipped in a row.
 - clock: print out the current time second by second. 
-
 
 
 # Lab0
@@ -36,5 +37,6 @@ Table of content:
 - **containsDuplicatesTest** a test used to check the **containsDuplicates  method** and be sure its working corectly without error , by checking if the input array give us true  if its contain Duplicates value .
 - **calcAverageTest** a test used to check the **calcAverage  method** and be sure its working corectly without error , by checking if the input array avg is the same for the corect mathematical average for the array's integers.
 - **arrayOfArraysTest** a test used to check the **arrayOfArrays  method** and be sure its working corectly without error , by checking if the output  array is the array that has the lowest avg . 
+
 
 
