@@ -38,5 +38,20 @@ Table of content:
 - **calcAverageTest** a test used to check the **calcAverage  method** and be sure its working corectly without error , by checking if the input array avg is the same for the corect mathematical average for the array's integers.
 - **arrayOfArraysTest** a test used to check the **arrayOfArrays  method** and be sure its working corectly without error , by checking if the output  array is the array that has the lowest avg . 
 
+# Lab03
+
+1. [Maps](./basiclibrary/lib/src/main/java/basiclibrary/Library.java) 
+
+--------------------------------------------------------------
+Library.Java has 2 new methods:
+monthlyTemperatures a function that takes an array of arrays ,find the min and max values. track of all the unique temperatures and create a String containing any temperature not seen during the month
+
+tally a function that accepts a List of Strings representing votes and returns one string to show what got the most votes.
+
+
+linter - App.java
+1. [linter](./linter/app/src/main/java/linter/App.java) 
+checkErr a function that that reads a JavaScript file in a certain path and generates an error message whenever it finds a line that doesn’t end in a semi-colon;
+Don’t show an error if the line is empty; Don’t show an error if the line ends with an opening curly brace {; Don’t show an error if the line ends with an closing curly brace }; Don’t show an error if the line contains if or else;
 
 
