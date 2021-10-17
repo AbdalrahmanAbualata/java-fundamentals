@@ -54,4 +54,21 @@ linter - App.java
 checkErr a function that that reads a JavaScript file in a certain path and generates an error message whenever it finds a line that doesn’t end in a semi-colon;
 Don’t show an error if the line is empty; Don’t show an error if the line ends with an opening curly brace {; Don’t show an error if the line ends with an closing curly brace }; Don’t show an error if the line contains if or else;
 
+# Lab06
+
+1. [Inhirtance ](./inheritance/lib/src/main/java/inheritance)
+2. [Test file  ](./inheritance/lib/src/test/java/inheritance/LibraryTest.java)
+
+--------------------------------------------------------------
+* Inhirtance directory contains 2 classes:
+- Reasturant class contains 3 methods :
+    - To string:to print reasurant details and reviwer details.
+    - AddReview:Add review details fromm review class.
+    - Average rating:calculate the average rating.
+- Review class:
+    - contain constructor.
+    - To string .
+
+
+
 

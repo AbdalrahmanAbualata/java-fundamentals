@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01bdf156-18fa-47d3-9195-64039959ddae" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/basiclibrary/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basiclibrary/.settings/org.eclipse.buildship.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basiclibrary/lib/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basiclibrary/lib/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basiclibrary/lib/.settings/org.eclipse.buildship.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basiclibrary/lib/bin/main/basiclibrary/Library.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basiclibrary/lib/bin/test/basiclibrary/LibraryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basiclibrary/lib/src/main/java/basiclibrary/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/basiclibrary/lib/src/main/java/basiclibrary/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basiclibrary/lib/src/test/java/basiclibrary/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/basiclibrary/lib/src/test/java/basiclibrary/LibraryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basics/.idea/basics.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basics/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basics/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basics/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/basics/.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/inheritance/lib/src/main/java/inheritance/Restaurant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inheritance/lib/src/main/java/inheritance/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linter/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/linter/.idea/gradle.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +14,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="lab03" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1zP8wp0GxP0mhtD2gyRLAZ7onB0" />
@@ -33,7 +29,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/basics" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -56,5 +52,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
