@@ -69,6 +69,24 @@ Don’t show an error if the line is empty; Don’t show an error if the line en
     - contain constructor.
     - To string .
 
+# Lab07
+
+1. [Inhirtance ](./inheritance/lib/src/main/java/inheritance)
+2. [Test file  ](./inheritance/lib/src/test/java/inheritance/LibraryTest.java)
+
+--------------------------------------------------------------
+The lab contain these classes:
+* `Restaurant`
+* `Review`
+* `Shop`
+* `Theater`
+  Shop class:contains toString and add review.
+  Theater class: contains toString and add review ,addMovie and removeMovie .
+  Theater Review:to review a specific movie.
+
+
+
+
 
 
 
