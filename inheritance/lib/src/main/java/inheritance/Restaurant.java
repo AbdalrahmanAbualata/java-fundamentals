@@ -61,22 +61,31 @@ public class Restaurant {
         }
 
     public void addReview( Review review){
-                  this.reviews.add(review);
-                   this.averageReview();
+        if(! this.reviews.contains(review)) {
+            this.reviews.add(review);
+            this.averageReview();
+        }
     }
 
+    public void addReview(String body, String author, int numOfStars) {
+        Review newRev = new Review(body,author,numOfStars);
+        if(! this.reviews.contains(newRev)) {
+            this.reviews.add(newRev);
+            this.averageReview();
+        }
+    }
     //calculate the average
 
     public int averageReview() {
-if (reviews.size()>=1){
+    if (reviews.size()>=1){
         int sum = 0;
         for (Review current : reviews) {
             sum += current.getStars();
         }
-        numOfStars = sum / reviews.size();
+        numOfStars = (sum+numOfStars) / (reviews.size()+1);
         return numOfStars;
     }
-        return this.numOfStars;
+        return numOfStars;
     }
 
 }

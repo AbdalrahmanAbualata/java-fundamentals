@@ -4,6 +4,7 @@ package inheritance;
         private String body;
         private String author;
         private int numOfStars;
+        private String movie;
         public void setNumOfStars(int numOfStars) {
             if (numOfStars >= 0 && numOfStars <= 5) {
                 this.numOfStars = numOfStars;
@@ -16,6 +17,13 @@ package inheritance;
             this.body = body;
             this.author = author;
             this.setNumOfStars(numOfStars);
+        }
+
+        public Review( String body, String author, int numOfStars,String movie) {
+            this.body = body;
+            this.author = author;
+            this.setNumOfStars(numOfStars);
+            this.movie=movie;
         }
 
         public String getAuthor() {
@@ -38,11 +46,21 @@ package inheritance;
 
         @Override
         public String toString() {
-            String msg ="Review{" +
-                    "body='" + body + '\'' +
-                    ", author='" + author + '\'' +
-                    ", numOfStars=" + numOfStars +
-                    '}';
+            String msg="";
+            if (this.movie != null) {
+                msg = "Review{" +
+                        "body='" + body + '\'' +
+                        ", author='" + author + '\'' +
+                        ", numOfStars=" + numOfStars +
+                        ", movie=" + movie +
+                        '}';
+            }else {
+                msg="Review{" +
+                        "body='" + body + '\'' +
+                        ", author='" + author + '\'' +
+                        ", numOfStars=" + numOfStars +
+                        '}';
+            }
             return msg ;
         }
 }

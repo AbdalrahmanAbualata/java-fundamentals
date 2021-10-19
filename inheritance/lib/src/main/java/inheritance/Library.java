@@ -3,6 +3,9 @@
  */
 package inheritance;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Library {
     public static void main(String[] args) {
 
@@ -19,5 +22,20 @@ public class Library {
         System.out.println(kfc.toString());
         System.out.println(mac.toString());
 
+
+        // lab 07
+        // add shop and review for that .
+        Shop ata =new Shop("ata","good shop","$$");
+        ata.addReview("good ","abd",3);
+        System.out.println(ata.toString());
+
+        // add Theater and review for that with movie and without movie .
+        List<String> movieList =new ArrayList<>();
+        movieList.add("stranger");
+        movieList.add("stranger things");
+        Theater abdon = new Theater("abdon cinema",movieList);
+        abdon.addReview("good ","abd",3);
+        abdon.addReview("good ","abd",3,"king");
+        System.out.println(abdon.toString());
     }
 }
