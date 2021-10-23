@@ -1,12 +1,12 @@
 package inheritance;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class Theater {
    private String name;
+   private int numOfStars;// RAte added
     private List<String> movielist;
     private Map<String,Review> reviews ;
 
@@ -16,6 +16,19 @@ public class Theater {
         this.movielist = movies;
         this.reviews=new HashMap<>();
     }
+
+    public int getNumOfStars() {
+        return numOfStars;
+    }
+
+    public void setNumOfStars(int numOfStars) {
+        if (numOfStars >= 0 && numOfStars <= 5) {
+            this.numOfStars = numOfStars;
+        }else {
+            this.numOfStars = 3;
+        }
+    }
+
     public String getName() {
         return name;
     }
@@ -58,19 +71,32 @@ public class Theater {
        }else {
            msg="Theater{" +
                    "name ='" + this.name + '\'' +
-                   ", movieList=" + movielist + " " + reviews
+                   ", Rate=" + numOfStars +
+                   ", movieList=" + movielist + " " + reviews.values()
                    ;
        }
         return msg ;
     }
 
-    public void addReview(String body, String author, int numOfStars) {
-        Review newRev = new Review(body,author,numOfStars);
-        reviews.put("",newRev);
+    public void addReview(Review newRev) {
+        if (newRev.getMovie()==null) {
+            reviews.put("", newRev);
+            averageReview();
+        }else{
+            reviews.put(newRev.getMovie(),newRev);
+            averageReview();
+        }
     }
-
-    public void addReview(String body, String author, int numOfStars,String movie){
-        Review newRev = new Review(body,author,numOfStars,movie);
-        reviews.put(movie,newRev);
+    // RAte added
+    public int averageReview() {
+        if (this.reviews.size()>=1){
+            int sum = 0;
+            for (Review current : reviews.values()) {
+                sum += current.getStars();
+            }
+            numOfStars = (sum)/ (reviews.size());
+            return numOfStars;
+        }
+        return numOfStars;
     }
 }

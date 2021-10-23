@@ -26,7 +26,11 @@ public class Library {
         // lab 07
         // add shop and review for that .
         Shop ata =new Shop("ata","good shop","$$");
-        ata.addReview("good ","abd",3);
+        Review ataReview = new Review("good shop","abdata",3);
+        Review ataReview1 = new Review("good shop","abdata",5);
+        // add review take Review instance .
+        ata.addReview(ataReview);
+        ata.addReview(ataReview1);
         System.out.println(ata.toString());
 
         // add Theater and review for that with movie and without movie .
@@ -34,8 +38,14 @@ public class Library {
         movieList.add("stranger");
         movieList.add("stranger things");
         Theater abdon = new Theater("abdon cinema",movieList);
-        abdon.addReview("good ","abd",3);
-        abdon.addReview("good ","abd",3,"king");
+        // Review without Movie
+        Review abdonReview1 = new Review("good theater","abdata",4);
+        // add review take Review instance .
+        abdon.addReview(abdonReview1);
+        //// Review with Movie
+        Review abdonReview2 = new Review("good theater","abdata",5,"king");
+        // add review take Review instance .
+        abdon.addReview(abdonReview2);
         System.out.println(abdon.toString());
     }
 }
