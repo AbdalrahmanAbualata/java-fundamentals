@@ -87,10 +87,11 @@ class LibraryTest {
         list.add("Titanic");
         list.add("The Lion King");
         Theater theater = new Theater("Prime Cinema",list);
-        theater.addReview("welcome","abd" ,5);
+        Review theaterReview1 = new Review("welcome","abd",5);
+        theater.addReview(theaterReview1);
         assertEquals("Theater{name ='Prime Cinema', movieList=[Titanic, The Lion King] {=Review{body='welcome', author='abd', numOfStars=5}}",theater.toString());
-
-        theater.addReview("welcome to jordan ","abd ata" ,3,"king panda");
+        Review theaterReview2 = new Review("welcome to jordan ","abd ata",3,"king panda");
+        theater.addReview(theaterReview2);
         assertEquals("Theater{name ='Prime Cinema', movieList=[Titanic, The Lion King] {=Review{body='welcome', author='abd', numOfStars=5}, king panda=Review{body='welcome to jordan ', author='abd ata', numOfStars=3, movie=king panda}}",theater.toString());
 
     }
